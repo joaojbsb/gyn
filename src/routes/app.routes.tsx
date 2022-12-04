@@ -1,6 +1,7 @@
 import { BottomTabNavigationProp, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useTheme } from 'native-base';
-import { Imagem } from '@components/Imagem';
+import { MaterialIcons, FontAwesome5,MaterialCommunityIcons } from '@expo/vector-icons';
+import { Icon } from 'native-base';
 import { Image, Platform } from 'react-native';
 
 import { Home } from '@screens/Home';
@@ -29,7 +30,7 @@ const { Navigator, Screen } = createBottomTabNavigator<AppRoutes>();
 export function AppRoutes(){
     const { sizes, colors } = useTheme();
 
-    const iconSize = sizes[6];
+    const iconSize = sizes[2];
 
     return(
         <Navigator screenOptions={{
@@ -51,7 +52,13 @@ export function AppRoutes(){
                 component={Home}
                 options={{ 
                     tabBarIcon: ({ color}) =>
-                    <Image source={homeSvg} width={iconSize} height={iconSize} alt={'icon'} color={color} />
+                    <Icon
+                        as={MaterialIcons}
+                        name={'home'}
+                        size={iconSize}
+                        color={color}
+                    />
+                    
                 }}
             />
 
@@ -60,7 +67,12 @@ export function AppRoutes(){
                 component={History}
                 options={{ 
                     tabBarIcon: ({ color}) =>
-                    <Image source={historySvg} width={iconSize} height={iconSize} alt={'icon'} color={color} />
+                    <Icon
+                        as={MaterialCommunityIcons}
+                        name={'history'}
+                        size={iconSize}
+                        color={color}
+                    />
                 }}
             />
 
@@ -69,7 +81,12 @@ export function AppRoutes(){
                 component={Profile}
                 options={{ 
                     tabBarIcon: ({ color}) =>
-                    <Image source={profileSvg} width={iconSize} height={iconSize} alt={'icon'} color={color} />
+                    <Icon
+                        as={FontAwesome5}
+                        name={'user'}
+                        size={iconSize}
+                        color={color}
+                    />
                 }}
             />
 
