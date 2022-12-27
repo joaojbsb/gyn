@@ -18,7 +18,7 @@ import colors from 'native-base/lib/typescript/theme/base/colors';
 
 type AppRoutes = {
     home: undefined,
-    exercise: undefined,
+    exercise: {exerciseId: string},
     profile: undefined,
     history: undefined,
 };
