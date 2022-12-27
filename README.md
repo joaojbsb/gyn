@@ -18,6 +18,7 @@
     <img src="./src/assets/screensImage/Home.png" width="220" alt="Imagem Tela Home">
     <img src="./src/assets/screensImage/Exercise.png" width="220" alt="Imagem Tela Exercicios">
     <img src="./src/assets/screensImage/History.png" width="220" alt="Imagem Tela Historico">
+        <img src="./src/assets/screensImage/Profile.png" width="220" alt="Imagem Tela Historico">
 <<<<<<< HEAD
 </div>
 =======
