@@ -19,8 +19,8 @@
     <img src="./src/assets/screensImage/Exercise.png" width="220" alt="Imagem Tela Exercicios">
     <img src="./src/assets/screensImage/History.png" width="220" alt="Imagem Tela Historico">
     <img src="./src/assets/screensImage/Profile.png" width="220" alt="Imagem Tela Historico">
-<<<<<<< HEAD
+
 </div>
 =======
 </div>
->>>>>>> 9c980067ff12211c97e3ead281de1485bebec1d4
+
